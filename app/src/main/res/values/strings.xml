@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Rugby</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <string name="initial_score">0</string>
+    <string name="desc_rugby_player_image">Rugby player with rugby ball in hand</string>
+    <string name="try_plus_5">Try +5</string>
+    <string name="Penalty_drop_plus_3">Pen/Drop +3</string>
+    <string name="conversion_plus_2">Conversion +2</string>
+    <string name="reset">Reset</string>
+    <string name="desc_try_plus_5_points_team_a">Try plus five points for team a</string>
+    <string name="desc_conv_plus_2_points_team_a">Conversion plus two points for team a</string>
+    <string name="desc_penalty_drop_plus_3_team_a">Penalty or drop plus three points for team a</string>
+    <string name="desc_try_plus_5_points_team_b">Try plus five points for team b</string>
+    <string name="desc_conv_plus_2_points_team_b">Conversion plus two points for team b</string>
+    <string name="desc_penalty_drop_plus_3_team_b">Penalty or drop plus three points for team b</string>
+    <string name="desc_reset">reset scores</string>
 </resources>

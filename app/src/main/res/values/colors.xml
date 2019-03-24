@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimary">#4db6ac</color>
+    <color name="colorPrimaryDark">#00867d</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="points_buttons_color">#4db6ac</color>
+    <color name="team_title">#616161</color>
+    <color name="team_score">#000000</color>
 </resources>
