@@ -9,8 +9,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity
 {
 
-    private int scoreTeamA = 0;
-    private int scoreTeamB = 0;
+    private int scoreTeamA;
+    private int scoreTeamB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -19,6 +19,10 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * Add 5 point to Team A score and display when +5 button is clicked
+     * Also update the Rugby player Image
+     */
     public void plusFiveForTeamA(View view)
     {
         scoreTeamA = scoreTeamA + 5;
@@ -26,6 +30,10 @@ public class MainActivity extends AppCompatActivity
         updateRugbyPlayerImageForFivePoints();
     }
 
+    /**
+     * Add 2 point to Team A score and display when +2 button is clicked
+     * Also update the Rugby player Image
+     */
     public void plusTwoForTeamA(View view)
     {
         scoreTeamA = scoreTeamA + 2;
@@ -33,6 +41,10 @@ public class MainActivity extends AppCompatActivity
         updateRugbyPlayerImageForTwoPoints();
     }
 
+    /**
+     * Add 3 point to Team A score and display when +3 button is clicked
+     * Also update the Rugby player Image
+     */
     public void plusThreeForTeamA(View view)
     {
         scoreTeamA = scoreTeamA + 3;
@@ -40,6 +52,9 @@ public class MainActivity extends AppCompatActivity
         updateRugbyPlayerImageForThreePoints();
     }
 
+    /**
+     * Display the score for Team A
+     */
     public void displayForTeamA(int score)
     {
         TextView scoreView = findViewById(R.id.team_a_score);
@@ -47,6 +62,10 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+    /**
+     * Add 5 point to Team B score and display when +5 button is clicked
+     * Also update the Rugby player Image
+     */
     public void plusFiveForTeamB(View view)
     {
         scoreTeamB = scoreTeamB + 5;
@@ -54,6 +73,10 @@ public class MainActivity extends AppCompatActivity
         updateRugbyPlayerImageForFivePoints();
     }
 
+    /**
+     * Add 2 point to Team B score and display when +2 button is clicked
+     * Also update the Rugby player Image
+     */
     public void plusTwoForTeamB(View view)
     {
         scoreTeamB = scoreTeamB + 2;
@@ -61,6 +84,10 @@ public class MainActivity extends AppCompatActivity
         updateRugbyPlayerImageForTwoPoints();
     }
 
+    /**
+     * Add 3 point to Team B score and display when +3 button is clicked
+     * Also update the Rugby player Image
+     */
     public void plusThreeForTeamB(View view)
     {
         scoreTeamB = scoreTeamB + 3;
@@ -68,7 +95,9 @@ public class MainActivity extends AppCompatActivity
         updateRugbyPlayerImageForThreePoints();
     }
 
-
+    /**
+     * Display the score for Team A
+     */
     public void displayForTeamB(int score)
     {
         TextView scoreView = findViewById(R.id.team_b_score);
@@ -76,6 +105,9 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+    /**
+     * Reset score to 0 for Team A and Team B when reset button is clicked
+     */
     public void resetScore(View view)
     {
         scoreTeamA = 0;
@@ -87,6 +119,9 @@ public class MainActivity extends AppCompatActivity
         rugbyPlayerImage.setBackgroundResource(R.drawable.start_rugby);
     }
 
+    /**
+     * Update Rugby Player image when +5 button is clicked
+     */
     private void updateRugbyPlayerImageForFivePoints()
     {
         ImageView rugbyPlayerImage = findViewById(R.id.rugby_player_image);
@@ -94,6 +129,9 @@ public class MainActivity extends AppCompatActivity
         rugbyPlayerImage.setBackgroundResource(R.drawable.try_5points_rugby);
     }
 
+    /**
+     * Update Rugby Player image when +2 button is clicked
+     */
     private void updateRugbyPlayerImageForTwoPoints()
     {
         ImageView rugbyPlayerImage = findViewById(R.id.rugby_player_image);
@@ -101,6 +139,9 @@ public class MainActivity extends AppCompatActivity
         rugbyPlayerImage.setBackgroundResource(R.drawable.conversion_2points_rugby);
     }
 
+    /**
+     * Update Rugby Player image when +3 button is clicked
+     */
     private void updateRugbyPlayerImageForThreePoints()
     {
         ImageView rugbyPlayerImage = findViewById(R.id.rugby_player_image);
